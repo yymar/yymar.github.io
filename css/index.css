@@ -6,6 +6,11 @@ p {
     font-family: 'Monoton', cursive;
     color: red;
     display: flex;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .header {
@@ -15,7 +20,7 @@ p {
 }
 
 #messenger {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     position: absolute;
@@ -35,7 +40,13 @@ p {
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    p{
+    p {
         font-size: 48px;
+    }
+}
+
+@keyframes example {
+    50% {
+        color: white;
     }
 }
