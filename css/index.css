@@ -1,16 +1,20 @@
 body {
-    background-color: black;
+
+    background: white; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, white , #FF4DFF); 
 }
 
-p {
+
+a {
     font-family: 'Monoton', cursive;
-    color: red;
+    color: #FF4DFF;
     display: flex;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    text-decoration: none;
 }
 
 .header {
