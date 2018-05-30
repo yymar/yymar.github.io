@@ -1,6 +1,5 @@
 body {
-
-    background: white; /* For browsers that do not support gradients */
+    background: white; 
     background: linear-gradient(to right, white , #FF4DFF); 
 }
 
