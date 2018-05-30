@@ -9,8 +9,8 @@ a {
     font-family: 'Monoton', cursive;
     color: #FF4DFF;
     display: flex;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 1s;
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
