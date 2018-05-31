@@ -1,6 +1,5 @@
 body {
-    background: white; 
-    background: linear-gradient(to right, white , #FF4DFF); 
+    background: white;  
 }
 
 
@@ -45,6 +44,9 @@ a {
     /* For tablets: */
     a {
         font-size: 72px;
+    }
+    body {
+        background: linear-gradient(to right, white , #FF4DFF);
     }
 }
 
