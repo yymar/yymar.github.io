@@ -5,7 +5,7 @@ body {
 
 a {
     font-family: 'Monoton', cursive;
-    color: #FF4DFF;
+    color: #46b19d;
     display: flex;
     -webkit-animation-name: example; 
     -webkit-animation-duration: 1s;
@@ -46,7 +46,7 @@ a {
         font-size: 72px;
     }
     body {
-        background: linear-gradient(to right, white , #FF4DFF);
+        background: linear-gradient(to right, white , #46b19d);
     }
 }
 
