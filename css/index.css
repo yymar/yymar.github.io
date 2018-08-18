@@ -1,5 +1,4 @@
 body {
-    background: white;
     background: linear-gradient(to right, white, #46b19d);
 }
 
@@ -131,6 +130,19 @@ a {
     background-color: #FFF;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+    body {
+        background: linear-gradient(to right, white, #46b19d);
+    }
+    .logo {
+        display: none;
+    }
+    .header {
+        display: flex;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     body {
@@ -153,21 +165,12 @@ a {
     .logo {
         display: none;
     }
+    .livesubcount{
+        width: 400px;
+        height: 80px;
+    }
     #paypal {
         display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    /* For tablets: */
-    body {
-        background: linear-gradient(to right, white, #46b19d);
-    }
-    .logo {
-        display: none;
-    }
-    .header {
-        display: flex;
     }
 }
 
