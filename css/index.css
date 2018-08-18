@@ -112,6 +112,10 @@ a {
     color: gray;
 }
 
+#looperman{
+    color: #1E6457;
+}
+
 /* live subscriber count styling */
 
 .subdiv {
@@ -169,6 +173,9 @@ a {
         height: 80px;
     }
     #paypal {
+        display: none;
+    }
+    #looperman {
         display: none;
     }
 }
