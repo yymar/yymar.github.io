@@ -1,5 +1,6 @@
 body {
     background: white;
+    background: linear-gradient(to right, white, #46b19d);
 }
 
 html {
@@ -29,6 +30,7 @@ a {
     display: flex;
     justify-content: center;
     font-size: 5em;
+    display: none;
 }
 
 #messenger {
@@ -43,6 +45,27 @@ a {
     text-shadow: 0 2px 2px rgba(#000, 0.9);
 }
 
+/* image styling */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+#logotransparent {
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+/* footer design */
+
 .footer {
     display: flex;
     justify-content: center;
@@ -52,7 +75,7 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: 1em;
     text-align: center;
 }
 
@@ -60,7 +83,7 @@ a {
     display: flex;
     justify-content: space-between;
     width: 75%;
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 #youtube {
@@ -91,10 +114,33 @@ a {
     color: gray;
 }
 
+/* live subscriber count styling */
+
+.subdiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.livesubcount {
+    border: 0;
+    width: 300px;
+    height: 80px;
+    background-color: #FFF;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    body {
+        background-color: white;
+    }
     a {
         font-size: 48px;
+    }
+    .header {
+        display: flex;
     }
     .footer {
         display: flex;
@@ -104,18 +150,24 @@ a {
         width: 100%;
         font-size: .5em;
     }
+    .logo {
+        display: none;
+    }
     #paypal {
         display: none;
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     /* For tablets: */
-    a {
-        font-size: 72px;
-    }
     body {
         background: linear-gradient(to right, white, #46b19d);
+    }
+    .logo {
+        display: none;
+    }
+    .header {
+        display: flex;
     }
 }
 
