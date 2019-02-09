@@ -1,187 +1,196 @@
 body {
-    background: linear-gradient(to right, white, #46b19d);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
 }
 
 html {
-    height: 100%;
-    box-sizing: border-box;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
-    font-family: 'Monoton', cursive;
-    color: #46b19d;
-    display: flex;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 1s;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    text-decoration: none;
+  font-family: 'Monoton', cursive;
+  color: #46b19d;
+  display: flex;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 1s;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-decoration: none;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    font-size: 5em;
-    display: none;
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+  display: none;
 }
 
 #messenger {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    text-shadow: 0 2px 2px rgba(#000, 0.9);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(#000, 0.9);
 }
 
 /* image styling */
-
 .logo {
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  transform: rotate(90);
+  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #logotransparent {
-    display: flex;
-    height: 75%;
-    width: 50%;
+  display: flex;
+  height: 75%;
+  width: 30%;
 }
 
 /* footer design */
-
 .footer {
-    display: flex;
-    justify-content: center;
-    background-color: #1E6457;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1em;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #422640;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  text-align: center;
 }
 
 .footer-items {
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-    font-size: 3em;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  font-size: 3em;
 }
 
 #youtube {
-    color: #ff0000;
+  color: #ff0000;
 }
 
 #twitter {
-    color: #00aced;
+  color: #00aced;
 }
 
 #instagram {
-    color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 #soundcloud {
-    color: #ff5836;
+  color: #ff5836;
 }
 
 #paypal {
-    color: #253b80;
+  color: #253b80;
 }
 
 #mail {
-    color: gray;
+  color: gray;
 }
 
-#looperman{
-    color: #1E6457;
+#looperman {
+  color: #1E6457;
 }
 
 /* live subscriber count styling */
-
 .subdiv {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
 }
 
 .livesubcount {
-    border: 0;
-    width: 600px;
-    height: 80px;
-    background-color: #FFF;
+  border: 0;
+  width: 600px;
+  height: 80px;
+  background-color: #FFF;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* For tablets: */
-    body {
-        background: linear-gradient(to right, white, #46b19d);
-    }
-    .logo {
-        display: none;
-    }
-    .header {
-        display: flex;
-    }
+
+  /* For tablets: */
+  body{
+  background: #FFF;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    body {
-        background-color: white;
-    }
-    a {
-        font-size: 48px;
-    }
-    .header {
-        display: flex;
-    }
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer-items {
-        width: 100%;
-        font-size: .5em;
-    }
-    .logo {
-        display: none;
-    }
-    .livesubcount{
-        width: 300px;
-        height: 80px;
-    }
-    #paypal {
-        display: none;
-    }
-    #looperman {
-        display: none;
-    }
-}
 
-@keyframes example {
-    50% {
-        color: white;
-    }
+  /* For mobile phones: */
+  body {
+    /* basically add my mobile background for this seen the fact it already has the correct sizes */
+    /* we need some kind of variable that switches the background when it is doing it's responsive logic */
+    background: #FFF;
+  }
+
+  a {
+    font-size: 48px;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-items {
+    width: 100%;
+    font-size: .5em;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .livesubcount {
+    width: 300px;
+    height: 80px;
+  }
+
+  #paypal {
+    display: none;
+  }
+
+  #looperman {
+    display: none;
+  }
 }
