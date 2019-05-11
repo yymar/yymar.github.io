@@ -1,8 +1,5 @@
 body {
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 html {
@@ -15,26 +12,27 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 a {
-  font-family: 'Monoton', cursive;
-  color: #422640;
   display: flex;
   justify-content: center;
-  -webkit-animation-name: example;
-  -webkit-animation-duration: 1s;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
   text-decoration: none;
 }
 
+ /* Y M A R Styling */ 
 .header {
   display: flex;
   width: 100%;  
   justify-content: center;
   font-size: 5em;
-  }
+}
+
+.header a {
+  font-family: 'Monoton', cursive;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #4ae3b6;
+}
 
 #messenger {
   position: relative;
@@ -87,6 +85,7 @@ a {
   font-size: 3em;
 }
 
+/* logo colouring */
 #youtube {
   color: #ff0000;
 }
@@ -139,7 +138,7 @@ a {
 
   /* For tablets: */
   body {
-  background: #FFF;
+    background: #FFF;
   }
   .header {
     display: flex;
@@ -150,8 +149,6 @@ a {
 
   /* For mobile phones: */
   body {
-    /* basically add my mobile background for this seen the fact it already has the correct sizes */
-    /* we need some kind of variable that switches the background when it is doing it's responsive logic */
     background: #FFF;
   }
 
