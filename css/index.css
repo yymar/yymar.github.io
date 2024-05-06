@@ -41,14 +41,14 @@ a {
 @keyframes blink {
   0% {
     opacity: 1;
-    translate: -70vh;
+    translate: -30vw;
   }
   50% {
     opacity: 0;
-    translate: 70vh;
+    translate: 30vw;
   }
   100% {
     opacity: 1;
-    translate: -70vh;
+    translate: -30vw;
   }
 }
